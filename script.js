@@ -42,6 +42,7 @@ errorDisplays = [
     inputMonth.oninput = function() {
         if (inputMonth.value > 0 && inputMonth.value <= 12) {
             monthValue = Number(inputMonth.value)
+            dayValue = Number(inputDay.value)
             errorFixed(1)
         }else if(inputMonth.value < 1 || inputMonth.value > 12) {
             errorMsg = "Must be a valid month"
